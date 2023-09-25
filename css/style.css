@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html{
+  font-size: 62.5%;
+  font-family: Cinzel, serif;
+}
+
+h1, h2, h3, h4{
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  border: none;
+  padding: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btnBlack {
+  background-color: black;
+  color: white;
+}
+
+.btnWhite {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+header>*{
+  /* border: 3px solid black; */
+}
+
+.topNav{
+  display: flex;
+  align-items: center;
+}
+
+.topNav>*{
+  margin: 0 1rem;
+}
+
+.topNav>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+
+.dropdownMenu{
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  padding: 1rem;
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition: transform 200ms ease-in-out;
+}
+
+.dropdownMenu>*{
+  display: block;
+}
+
+.dropdownMenu.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+  transform: translateY(0);
+}
+
+.topNav input {
+  width: 8rem;
+}
+
+.smallNav{
+  display: none;
+}
+
+@media all and (max-width: 1000px){
+  .topNav{
+    display: none;
+  }
+  .booking{
+    display: none;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .smallNav{
+    display: inline-block;
+  }
+
+  .navDropContent{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    padding: 1rem;
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    transform: translateY(-0.5rem);
+    transition: transform 200ms ease-in-out;
+  }
+
+  .navDropContent.active{
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 10;
+    transform: translateY(0);
+  }
+}
+
+.main {
+  color: white;
+  position: relative;
+  background: url("assets/background.jpg") no-repeat center center scroll;
+  background-size: cover;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.main>*{
+  position: relative;
+  margin: 1rem;
+  width: 45%;
+  font-size: 2.4rem;
+}
+
+.main>button{
+  width: auto;
+}
+
+.main>h1{
+  margin: 0;
+  font-size: 10rem;
+}
+
+.firstVisit {
+  background-color: black;
+  width: 20%;
+  padding: 4rem 3rem;
+  margin: 4rem 1rem;
+}
+
+.firstVisit>*{
+  margin: 2rem 0;
+}
+
+.hours {
+  position: absolute;
+  right: -5%;
+  width: auto;
+  transform: rotate(90deg) translateY(-50%);
+  margin: 0;
+  top: 50%;
+}
+
+.values {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 8%;
+}
+
+.values>*{
+  width: 25%;
+}
+
+.video {
+  background-color: #f3f4f6;
+  padding: 10%;
+}
+
+.video>*{
+  display: inline-block;
+  width: 40%;
+  margin: 0 4rem;
+}
+
+.stylists{
+  text-align: center;
+}
+
+.personnel{
+  display: inline-block;
+  margin: 10rem 2rem;
+  width: 16%;
+}
+
+.personnel>*:not(img){
+  display: block;
+}
+
+.personnel>img{
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.offerContainer{
+  background: url("assets/promoBG.jpg") no-repeat center top scroll;
+  background-size: cover;
+  width: 75%;
+  height: 440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 10rem;
+}
+
+.lbContainer h1{
+  text-align: center;
+}
+
+.lookbook {
+  margin:auto;
+  width: 72%;
+  display: flex;
+  justify-content:center;
+}
+
+.col img{
+  margin: 0.8rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1.6rem;
+}
+
+.footContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footSec {
+  width: 20%;
+  margin: 2.4rem;
+}
+
+.footSec img {
+  width: 7.5rem;
+  height: 7.5rem;
+  object-fit: cover;
+}
+
+.social{
+  padding-inline-start: 0px;
+}
+
+.copyright{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
