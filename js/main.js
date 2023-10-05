@@ -4,7 +4,7 @@ let smallNav = document.querySelector('.smallNav');
 let smallNavContent = document.querySelector('.navDropContent')
 
 
-smallNav.addEventListener('click', function() {toggleSmallDrop()});
+smallNav.addEventListener('click', toggleSmallDrop);
 
 navLinks.forEach((e, i) => {
     e.addEventListener('mouseover', function() {openDropdown(i)});

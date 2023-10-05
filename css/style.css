@@ -67,6 +67,7 @@ header {
  display: flex;
  justify-content: space-around;
  align-items: center;
+ padding: 0 8rem;
 }
 
 header>*{
@@ -257,6 +258,10 @@ li{
   display: flex;
   align-items: center;
   padding-left: 10rem;
+}
+
+.lbContainer{
+  width: 100%;
 }
 
 .lbContainer h1{
