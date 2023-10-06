@@ -261,7 +261,8 @@ li{
 }
 
 .lbContainer{
-  width: 100%;
+  margin: auto;
+  width: 80%;
 }
 
 .lbContainer h1{
@@ -269,20 +270,23 @@ li{
 }
 
 .lookbook {
-  margin:auto;
-  width: 72%;
+  margin: auto;
+  width: 100%;
   display: flex;
   justify-content:center;
 }
 
 .col img{
   margin: 0.8rem;
+  width: 92%;
 }
 
 footer {
   background-color: black;
   color: white;
   padding: 1.6rem;
+  width: 100%;
+  margin: auto;
 }
 
 .footContainer {
@@ -309,6 +313,8 @@ footer {
 }
 
 .copyright{
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
