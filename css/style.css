@@ -189,9 +189,11 @@ li{
 }
 
 .firstVisit {
+  position: relative;
+  bottom: 0;
   background-color: black;
-  width: 20%;
-  padding: 4rem 3rem;
+  width: 25%;
+  padding: 2rem 3rem;
   margin: 4rem 1rem;
 }
 
@@ -208,10 +210,56 @@ li{
   top: 50%;
 }
 
+@media all and (max-width: 1000px){
+  .html>*{
+    width: 100%;
+  }
+  .main {
+    color: white;
+    background: url("assets/bgSmall.jpg") no-repeat right center scroll;
+    background-size: cover;
+    padding-top: 10%;
+    padding-left: 0;
+  }
+
+  .main>h1, .main>p, .main>button{
+    margin-left: 2rem;
+  }
+
+  .firstVisit{
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem; 
+  }
+
+  .values {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 8%;
+  }
+  
+  .values>*{
+    width: 25%;
+  }
+
+  .hours {
+    position: absolute;
+    right: -20%;
+    width: auto;
+    transform: rotate(90deg) translateY(-50%);
+    margin: 0;
+    top: 40%;
+  }
+
+}
+
 .values {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap;
   padding: 8%;
 }
 
