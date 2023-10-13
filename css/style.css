@@ -28,6 +28,10 @@ html{
   font-family: Cinzel, serif;
 }
 
+.html>*{
+  width: 100%;
+}
+
 h1, h2, h3, h4{
   font-weight: 400;
 }
@@ -211,9 +215,6 @@ li{
 }
 
 @media all and (max-width: 1000px){
-  .html>*{
-    width: 100%;
-  }
   .main {
     color: white;
     background: url("assets/bgSmall.jpg") no-repeat right center scroll;
@@ -232,25 +233,13 @@ li{
     padding: 1rem 2rem; 
   }
 
-  .values {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-    padding: 8%;
-  }
-  
-  .values>*{
-    width: 25%;
-  }
-
   .hours {
     position: absolute;
-    right: -20%;
+    right: -14rem;
     width: auto;
     transform: rotate(90deg) translateY(-50%);
     margin: 0;
-    top: 40%;
+    top: 50%;
   }
 
 }
@@ -265,6 +254,20 @@ li{
 
 .values>*{
   width: 25%;
+}
+
+@media all and (max-width: 612px){
+  .values {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 8%;
+  }
+  .values>*{
+    width: 100%;
+  }
 }
 
 .video {
