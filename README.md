@@ -1,5 +1,6 @@
 # Ayesha Salon
 A professional and responsive website for a salon client. Showcass deals, employees, and lookbook of styles.
+!(Gif of scrolling on website)[images/salonGif.gif]
 # How it's made
 Made using HTML, CSS, and Javascript. Much of the layout was made using flexbox. The fonts and logos are imported using Google Fonts and Font-awesome, respectively. 
 Javascript is used to help make the site responsive, such as the navagation menu switching to a button at the top on smaller devices.
