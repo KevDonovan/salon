@@ -1,5 +1,5 @@
 # Ayesha Salon
-A professional and responsive website for a salon client. Showcass deals, employees, and lookbook of styles.
+A professional and responsive website for a salon client. Showcasing deals, employees, and lookbook of styles.
 Site deployment can be found [here](https://brookside-ayesha.netlify.app/)
 
 ![Gif of scrolling on website](https://raw.githubusercontent.com/KevDonovan/kevdonovan.github.io/main/images/salonGif.gif)
